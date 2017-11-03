@@ -11,7 +11,10 @@ from sklearn.preprocessing import Normalizer
 from sklearn.tree import DecisionTreeClassifier, ExtraTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 import matplotlib.pyplot as plt
+
 import matplotlib
+
+matplotlib.use('Agg')
 from sklearn.metrics import roc_auc_score, average_precision_score, precision_recall_curve, roc_curve
 
 from sklearn.model_selection import StratifiedKFold
